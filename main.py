@@ -24,7 +24,7 @@ async def beeMention(ctx, user: discord.User):
     resp = random.choice(bees)
     await user.send(resp)
     
-@client.command(name='SendSomeLinesFromBeeMovie', help='DM Willie the entire Bee Move script')
+@client.command(name='SendSomeLinesFromBeeMovie', help='DM someone the entire Bee Move script')
 async def SendSomeLinesFromBeeMovie(ctx, user:discord.User, number):
     count = range(int(number))
     await ctx.send(f'{user} is going to hate this...')
